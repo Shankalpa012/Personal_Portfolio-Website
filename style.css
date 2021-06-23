@@ -306,7 +306,7 @@ section, footer {
 }
 
 .about-details .about-btn {
-  padding: 10px 15px;
+  padding: 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,21 +314,26 @@ section, footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 10px;
 }
 
 .about-details .about-btn .hire-btn {
   padding: 6px 15px;
-  margin: 0px 10px;
   font-size: 1rem;
   background-color: #BAC964;
-  color: #fafafa;
   border: none;
   border-radius: 20px;
   cursor: pointer;
 }
 
+.about-details .about-btn .hire-btn a {
+  color: #fafafa;
+}
+
 .about-details .about-btn .hire-btn:hover {
   background-color: #8f9b4d;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 .about-details .about-btn .download-btn {
@@ -341,8 +346,14 @@ section, footer {
   cursor: pointer;
 }
 
+.about-details .about-btn .download-btn a {
+  color: #fafafa;
+}
+
 .about-details .about-btn .download-btn:hover {
   background-color: #484d52;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 @media screen and (max-width: 750px) {
@@ -760,7 +771,7 @@ footer .footer-container .contact label {
   padding: 5px 0px;
 }
 
-footer .footer-container .contact p {
+footer .footer-container .contact p, footer .footer-container .contact a {
   color: #696866;
 }
 
