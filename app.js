@@ -115,7 +115,7 @@ const input = document.querySelector('form');
 const btn = document.querySelector(".submit")
 
 
-btn.addEventListener("click",(e)=>{
+const mail = (e)=>{
     e.preventDefault();
     if(isNaN(input.elements["phone"].value)){
         alert(`${input.elements["phone"].value } : is not a valid number`)
@@ -132,12 +132,8 @@ btn.addEventListener("click",(e)=>{
         }).then(
         message => alert("Message Sent SuccessFully")
         );
-    }
-
-
-    
-   
-})
+    }  
+}
 
 
 
