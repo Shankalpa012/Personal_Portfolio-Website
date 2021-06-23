@@ -111,29 +111,30 @@ function init(){
 }
 
 
-// const input = document.querySelector('form');
-// const btn = document.querySelector(".submit")
+const input = document.querySelector('form');
+const btn = document.querySelector(".submit")
 
 
-// const mail = (e)=>{
-//     e.preventDefault();
-//     if(isNaN(input.elements["phone"].value) || input.elements["name"].value){
-//         alert(`${input.elements["phone"].value } : is not a valid number`)
-//     }   else{
+const mail = (e)=>{
+    e.preventDefault();
+    if(isNaN(input.elements["phone"].value)){
+        alert(`${input.elements["phone"].value } : is not a valid number`)
+    }   
+    // else{
         
-//         Email.send({
-//             Host : "smtp.mailtrap.io",
-//             Username : "813456da46c96a",
-//             Password : "3b364f1e5513bf",
-//             To : 'shankalpakoirala@gmail.com',
-//             From : input.elements["email"].value,
-//             Subject : "Feedback form",
-//             Body : input.elements["name"].value + "<br/>"+input.elements["phone"].value + "<br/>" + input.elements["msg"].value
-//         }).then(
-//         message => alert("Message Sent SuccessFully")
-//         );
-//     }  
-// }
+    //     Email.send({
+    //         Host : "smtp.mailtrap.io",
+    //         Username : "813456da46c96a",
+    //         Password : "3b364f1e5513bf",
+    //         To : 'shankalpakoirala@gmail.com',
+    //         From : input.elements["email"].value,
+    //         Subject : "Feedback form",
+    //         Body : input.elements["name"].value + "<br/>"+input.elements["phone"].value + "<br/>" + input.elements["msg"].value
+    //     }).then(
+    //     message => alert("Message Sent SuccessFully")
+    //     );
+    // }  
+}
 
 
 
